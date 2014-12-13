@@ -15,6 +15,7 @@ Petra
 
 For Petra we have two versions.
 The first is where we wrote an algorithm to calculate the route from A to B.
+
 In the second we used boost to do the same. We intended it to be a little comparison, so you can compare the results, runtime, path and visited nodes too.
 
 
@@ -22,6 +23,7 @@ Malvin
 ======
 
 Malvin: The output is tailored for our viewer.
+
 MalvinDetails: The output is ordered by the buses, and for each stop we write the stops's name (usually the stop's street) and it's GPS location.
 
 
