@@ -1,0 +1,935 @@
+bstops-bus-stops.o: bus-stops.cpp /usr/include/stdc-predef.h \
+ /usr/include/c++/4.8.3/iostream \
+ /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/c++config.h \
+ /usr/include/bits/wordsize.h \
+ /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/os_defines.h \
+ /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
+ /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/cpu_defines.h \
+ /usr/include/c++/4.8.3/ostream /usr/include/c++/4.8.3/ios \
+ /usr/include/c++/4.8.3/iosfwd /usr/include/c++/4.8.3/bits/stringfwd.h \
+ /usr/include/c++/4.8.3/bits/memoryfwd.h \
+ /usr/include/c++/4.8.3/bits/postypes.h /usr/include/c++/4.8.3/cwchar \
+ /usr/include/wchar.h /usr/include/stdio.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.3/include/stdarg.h \
+ /usr/include/bits/wchar.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.3/include/stddef.h \
+ /usr/include/xlocale.h /usr/include/c++/4.8.3/exception \
+ /usr/include/c++/4.8.3/bits/atomic_lockfree_defines.h \
+ /usr/include/c++/4.8.3/bits/exception_ptr.h \
+ /usr/include/c++/4.8.3/bits/exception_defines.h \
+ /usr/include/c++/4.8.3/bits/nested_exception.h \
+ /usr/include/c++/4.8.3/bits/char_traits.h \
+ /usr/include/c++/4.8.3/bits/stl_algobase.h \
+ /usr/include/c++/4.8.3/bits/functexcept.h \
+ /usr/include/c++/4.8.3/bits/cpp_type_traits.h \
+ /usr/include/c++/4.8.3/ext/type_traits.h \
+ /usr/include/c++/4.8.3/ext/numeric_traits.h \
+ /usr/include/c++/4.8.3/bits/stl_pair.h \
+ /usr/include/c++/4.8.3/bits/move.h \
+ /usr/include/c++/4.8.3/bits/concept_check.h \
+ /usr/include/c++/4.8.3/type_traits \
+ /usr/include/c++/4.8.3/bits/stl_iterator_base_types.h \
+ /usr/include/c++/4.8.3/bits/stl_iterator_base_funcs.h \
+ /usr/include/c++/4.8.3/debug/debug.h \
+ /usr/include/c++/4.8.3/bits/stl_iterator.h \
+ /usr/include/c++/4.8.3/cstdint \
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.3/include/stdint.h \
+ /usr/include/stdint.h /usr/include/c++/4.8.3/bits/localefwd.h \
+ /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/c++locale.h \
+ /usr/include/c++/4.8.3/clocale /usr/include/locale.h \
+ /usr/include/bits/locale.h /usr/include/c++/4.8.3/cctype \
+ /usr/include/ctype.h /usr/include/bits/types.h \
+ /usr/include/bits/typesizes.h /usr/include/endian.h \
+ /usr/include/bits/endian.h /usr/include/bits/byteswap.h \
+ /usr/include/bits/byteswap-16.h /usr/include/c++/4.8.3/bits/ios_base.h \
+ /usr/include/c++/4.8.3/ext/atomicity.h \
+ /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/gthr.h \
+ /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/gthr-default.h \
+ /usr/include/pthread.h /usr/include/sched.h /usr/include/time.h \
+ /usr/include/bits/sched.h /usr/include/bits/time.h \
+ /usr/include/bits/timex.h /usr/include/bits/pthreadtypes.h \
+ /usr/include/bits/setjmp.h \
+ /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/atomic_word.h \
+ /usr/include/c++/4.8.3/bits/locale_classes.h \
+ /usr/include/c++/4.8.3/string /usr/include/c++/4.8.3/bits/allocator.h \
+ /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/c++allocator.h \
+ /usr/include/c++/4.8.3/ext/new_allocator.h /usr/include/c++/4.8.3/new \
+ /usr/include/c++/4.8.3/bits/ostream_insert.h \
+ /usr/include/c++/4.8.3/bits/cxxabi_forced.h \
+ /usr/include/c++/4.8.3/bits/stl_function.h \
+ /usr/include/c++/4.8.3/backward/binders.h \
+ /usr/include/c++/4.8.3/bits/range_access.h \
+ /usr/include/c++/4.8.3/bits/basic_string.h \
+ /usr/include/c++/4.8.3/initializer_list \
+ /usr/include/c++/4.8.3/ext/string_conversions.h \
+ /usr/include/c++/4.8.3/cstdlib /usr/include/stdlib.h \
+ /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
+ /usr/include/sys/types.h /usr/include/sys/select.h \
+ /usr/include/bits/select.h /usr/include/bits/sigset.h \
+ /usr/include/sys/sysmacros.h /usr/include/alloca.h \
+ /usr/include/bits/stdlib-bsearch.h /usr/include/bits/stdlib-float.h \
+ /usr/include/c++/4.8.3/cstdio /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/bits/stdio_lim.h \
+ /usr/include/bits/sys_errlist.h /usr/include/bits/stdio.h \
+ /usr/include/c++/4.8.3/cerrno /usr/include/errno.h \
+ /usr/include/bits/errno.h /usr/include/linux/errno.h \
+ /usr/include/asm/errno.h /usr/include/asm-generic/errno.h \
+ /usr/include/asm-generic/errno-base.h \
+ /usr/include/c++/4.8.3/bits/functional_hash.h \
+ /usr/include/c++/4.8.3/bits/hash_bytes.h \
+ /usr/include/c++/4.8.3/bits/basic_string.tcc \
+ /usr/include/c++/4.8.3/bits/locale_classes.tcc \
+ /usr/include/c++/4.8.3/streambuf \
+ /usr/include/c++/4.8.3/bits/streambuf.tcc \
+ /usr/include/c++/4.8.3/bits/basic_ios.h \
+ /usr/include/c++/4.8.3/bits/locale_facets.h \
+ /usr/include/c++/4.8.3/cwctype /usr/include/wctype.h \
+ /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/ctype_base.h \
+ /usr/include/c++/4.8.3/bits/streambuf_iterator.h \
+ /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/ctype_inline.h \
+ /usr/include/c++/4.8.3/bits/locale_facets.tcc \
+ /usr/include/c++/4.8.3/bits/basic_ios.tcc \
+ /usr/include/c++/4.8.3/bits/ostream.tcc /usr/include/c++/4.8.3/istream \
+ /usr/include/c++/4.8.3/bits/istream.tcc /usr/include/c++/4.8.3/cstddef \
+ /usr/include/osmium/io/any_input.hpp \
+ /usr/include/osmium/io/any_compression.hpp \
+ /usr/include/osmium/io/bzip2_compression.hpp \
+ /usr/include/c++/4.8.3/stdexcept /usr/include/bzlib.h \
+ /usr/include/unistd.h /usr/include/bits/posix_opt.h \
+ /usr/include/bits/environments.h /usr/include/bits/confname.h \
+ /usr/include/getopt.h /usr/include/osmium/io/compression.hpp \
+ /usr/include/c++/4.8.3/functional /usr/include/c++/4.8.3/typeinfo \
+ /usr/include/c++/4.8.3/tuple /usr/include/c++/4.8.3/utility \
+ /usr/include/c++/4.8.3/bits/stl_relops.h /usr/include/c++/4.8.3/array \
+ /usr/include/c++/4.8.3/bits/uses_allocator.h /usr/include/c++/4.8.3/map \
+ /usr/include/c++/4.8.3/bits/stl_tree.h \
+ /usr/include/c++/4.8.3/bits/alloc_traits.h \
+ /usr/include/c++/4.8.3/bits/ptr_traits.h \
+ /usr/include/c++/4.8.3/bits/stl_map.h \
+ /usr/include/c++/4.8.3/bits/stl_multimap.h /usr/include/c++/4.8.3/memory \
+ /usr/include/c++/4.8.3/bits/stl_construct.h \
+ /usr/include/c++/4.8.3/ext/alloc_traits.h \
+ /usr/include/c++/4.8.3/bits/stl_uninitialized.h \
+ /usr/include/c++/4.8.3/bits/stl_tempbuf.h \
+ /usr/include/c++/4.8.3/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/4.8.3/ext/concurrence.h \
+ /usr/include/c++/4.8.3/bits/unique_ptr.h \
+ /usr/include/c++/4.8.3/bits/shared_ptr.h \
+ /usr/include/c++/4.8.3/bits/shared_ptr_base.h \
+ /usr/include/c++/4.8.3/backward/auto_ptr.h \
+ /usr/include/c++/4.8.3/system_error \
+ /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/error_constants.h \
+ /usr/include/osmium/io/detail/read_write.hpp /usr/include/fcntl.h \
+ /usr/include/bits/fcntl.h /usr/include/bits/fcntl-linux.h \
+ /usr/include/bits/uio.h /usr/include/bits/stat.h \
+ /usr/include/osmium/io/overwrite.hpp \
+ /usr/include/osmium/io/file_compression.hpp \
+ /usr/include/osmium/util/compatibility.hpp \
+ /usr/include/osmium/util/cast.hpp /usr/include/c++/4.8.3/cassert \
+ /usr/include/assert.h /usr/include/c++/4.8.3/limits \
+ /usr/include/osmium/io/gzip_compression.hpp /usr/include/zlib.h \
+ /usr/include/zconf.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.3/include/limits.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.3/include/syslimits.h \
+ /usr/include/limits.h /usr/include/bits/posix1_lim.h \
+ /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
+ /usr/include/osmium/io/pbf_input.hpp /usr/include/osmium/io/reader.hpp \
+ /usr/include/c++/4.8.3/atomic /usr/include/c++/4.8.3/bits/atomic_base.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.3/include/stdbool.h \
+ /usr/include/c++/4.8.3/thread /usr/include/c++/4.8.3/chrono \
+ /usr/include/c++/4.8.3/ratio /usr/include/c++/4.8.3/ctime \
+ /usr/include/sys/wait.h /usr/include/signal.h /usr/include/bits/signum.h \
+ /usr/include/bits/siginfo.h /usr/include/bits/sigaction.h \
+ /usr/include/bits/sigcontext.h /usr/include/bits/sigstack.h \
+ /usr/include/sys/ucontext.h /usr/include/bits/sigthread.h \
+ /usr/include/osmium/io/detail/input_format.hpp \
+ /usr/include/osmium/io/file.hpp /usr/include/c++/4.8.3/sstream \
+ /usr/include/c++/4.8.3/bits/sstream.tcc /usr/include/c++/4.8.3/vector \
+ /usr/include/c++/4.8.3/bits/stl_vector.h \
+ /usr/include/c++/4.8.3/bits/stl_bvector.h \
+ /usr/include/c++/4.8.3/bits/vector.tcc \
+ /usr/include/osmium/io/file_format.hpp \
+ /usr/include/osmium/util/options.hpp /usr/include/osmium/io/header.hpp \
+ /usr/include/osmium/osm/box.hpp /usr/include/osmium/osm/location.hpp \
+ /usr/include/c++/4.8.3/cmath /usr/include/math.h \
+ /usr/include/bits/huge_val.h /usr/include/bits/huge_valf.h \
+ /usr/include/bits/huge_vall.h /usr/include/bits/inf.h \
+ /usr/include/bits/nan.h /usr/include/bits/mathdef.h \
+ /usr/include/bits/mathcalls.h /usr/include/bits/mathinline.h \
+ /usr/include/osmium/util/double.hpp /usr/include/c++/4.8.3/algorithm \
+ /usr/include/c++/4.8.3/bits/stl_algo.h \
+ /usr/include/c++/4.8.3/bits/algorithmfwd.h \
+ /usr/include/c++/4.8.3/bits/stl_heap.h /usr/include/c++/4.8.3/random \
+ /usr/include/c++/4.8.3/bits/random.h \
+ /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/opt_random.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.3/include/x86intrin.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.3/include/ia32intrin.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.3/include/mmintrin.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.3/include/xmmintrin.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.3/include/mm_malloc.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.3/include/emmintrin.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.3/include/immintrin.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.3/include/fxsrintrin.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.3/include/adxintrin.h \
+ /usr/include/c++/4.8.3/bits/random.tcc /usr/include/c++/4.8.3/numeric \
+ /usr/include/c++/4.8.3/bits/stl_numeric.h \
+ /usr/include/osmium/memory/buffer.hpp /usr/include/c++/4.8.3/cstring \
+ /usr/include/string.h /usr/include/c++/4.8.3/iterator \
+ /usr/include/c++/4.8.3/bits/stream_iterator.h \
+ /usr/include/osmium/memory/item.hpp \
+ /usr/include/osmium/memory/item_iterator.hpp \
+ /usr/include/osmium/osm/item_type.hpp /usr/include/osmium/osm/entity.hpp \
+ /usr/include/osmium/osm/entity_bits.hpp \
+ /usr/include/osmium/io/detail/read_thread.hpp \
+ /usr/include/osmium/thread/name.hpp /usr/include/sys/prctl.h \
+ /usr/include/linux/prctl.h /usr/include/osmium/thread/queue.hpp \
+ /usr/include/c++/4.8.3/condition_variable /usr/include/c++/4.8.3/mutex \
+ /usr/include/c++/4.8.3/queue /usr/include/c++/4.8.3/deque \
+ /usr/include/c++/4.8.3/bits/stl_deque.h \
+ /usr/include/c++/4.8.3/bits/deque.tcc \
+ /usr/include/c++/4.8.3/bits/stl_queue.h \
+ /usr/include/osmium/thread/checked_task.hpp \
+ /usr/include/c++/4.8.3/future \
+ /usr/include/osmium/io/detail/pbf_input_format.hpp \
+ /usr/include/osmium/builder/osm_object_builder.hpp \
+ /usr/include/osmium/builder/builder.hpp \
+ /usr/include/osmium/osm/types.hpp /usr/include/osmium/osm.hpp \
+ /usr/include/osmium/osm/node.hpp /usr/include/osmium/osm/object.hpp \
+ /usr/include/osmium/memory/collection.hpp \
+ /usr/include/osmium/osm/tag.hpp /usr/include/osmium/osm/timestamp.hpp \
+ /usr/include/osmium/osm/way.hpp /usr/include/osmium/osm/node_ref.hpp \
+ /usr/include/osmium/osm/node_ref_list.hpp \
+ /usr/include/osmium/osm/relation.hpp /usr/include/osmium/osm/area.hpp \
+ /usr/include/osmium/osm/changeset.hpp \
+ /usr/include/osmium/io/detail/pbf.hpp /usr/local/include/osmpbf/osmpbf.h \
+ /usr/local/include/osmpbf/fileformat.pb.h \
+ /usr/include/google/protobuf/stubs/common.h \
+ /usr/include/google/protobuf/generated_message_util.h \
+ /usr/include/google/protobuf/message_lite.h \
+ /usr/include/google/protobuf/repeated_field.h \
+ /usr/include/google/protobuf/stubs/type_traits.h \
+ /usr/include/google/protobuf/stubs/template_util.h \
+ /usr/include/google/protobuf/extension_set.h \
+ /usr/local/include/osmpbf/osmformat.pb.h /usr/include/netinet/in.h \
+ /usr/include/sys/socket.h /usr/include/sys/uio.h \
+ /usr/include/bits/socket.h /usr/include/bits/socket_type.h \
+ /usr/include/bits/sockaddr.h /usr/include/asm/socket.h \
+ /usr/include/asm-generic/socket.h /usr/include/asm/sockios.h \
+ /usr/include/asm-generic/sockios.h /usr/include/bits/in.h \
+ /usr/include/osmium/io/detail/zlib.hpp \
+ /usr/include/osmium/thread/pool.hpp \
+ /usr/include/osmium/thread/function_wrapper.hpp \
+ /usr/include/osmium/io/xml_input.hpp \
+ /usr/include/osmium/io/detail/xml_input_format.hpp /usr/include/expat.h \
+ /usr/include/expat_external.h /usr/include/osmium/handler.hpp \
+ /usr/include/osmium/visitor.hpp \
+ /usr/include/osmium/io/reader_iterator.hpp \
+ /usr/include/osmium/io/input_iterator.hpp \
+ /usr/include/osmium/index/map/sparse_table.hpp \
+ /usr/include/google/sparsetable /usr/include/sparsehash/sparsetable \
+ /usr/include/sparsehash/internal/sparseconfig.h /usr/include/inttypes.h \
+ /usr/include/sparsehash/type_traits.h \
+ /usr/include/sparsehash/template_util.h \
+ /usr/include/sparsehash/internal/hashtable-common.h \
+ /usr/include/sparsehash/internal/libc_allocator_with_realloc.h \
+ /usr/include/osmium/index/map.hpp /usr/include/osmium/index/index.hpp \
+ /usr/include/osmium/handler/node_locations_for_ways.hpp \
+ /usr/include/osmium/index/map/dummy.hpp /usr/include/c++/4.8.3/set \
+ /usr/include/c++/4.8.3/bits/stl_set.h \
+ /usr/include/c++/4.8.3/bits/stl_multiset.h \
+ /usr/include/c++/4.8.3/fstream /usr/include/c++/4.8.3/bits/codecvt.h \
+ /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/basic_file.h \
+ /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/c++io.h \
+ /usr/include/c++/4.8.3/bits/fstream.tcc
+
+/usr/include/stdc-predef.h:
+
+/usr/include/c++/4.8.3/iostream:
+
+/usr/include/c++/4.8.3/x86_64-redhat-linux/bits/c++config.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/c++/4.8.3/x86_64-redhat-linux/bits/os_defines.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-64.h:
+
+/usr/include/c++/4.8.3/x86_64-redhat-linux/bits/cpu_defines.h:
+
+/usr/include/c++/4.8.3/ostream:
+
+/usr/include/c++/4.8.3/ios:
+
+/usr/include/c++/4.8.3/iosfwd:
+
+/usr/include/c++/4.8.3/bits/stringfwd.h:
+
+/usr/include/c++/4.8.3/bits/memoryfwd.h:
+
+/usr/include/c++/4.8.3/bits/postypes.h:
+
+/usr/include/c++/4.8.3/cwchar:
+
+/usr/include/wchar.h:
+
+/usr/include/stdio.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.8.3/include/stdarg.h:
+
+/usr/include/bits/wchar.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.8.3/include/stddef.h:
+
+/usr/include/xlocale.h:
+
+/usr/include/c++/4.8.3/exception:
+
+/usr/include/c++/4.8.3/bits/atomic_lockfree_defines.h:
+
+/usr/include/c++/4.8.3/bits/exception_ptr.h:
+
+/usr/include/c++/4.8.3/bits/exception_defines.h:
+
+/usr/include/c++/4.8.3/bits/nested_exception.h:
+
+/usr/include/c++/4.8.3/bits/char_traits.h:
+
+/usr/include/c++/4.8.3/bits/stl_algobase.h:
+
+/usr/include/c++/4.8.3/bits/functexcept.h:
+
+/usr/include/c++/4.8.3/bits/cpp_type_traits.h:
+
+/usr/include/c++/4.8.3/ext/type_traits.h:
+
+/usr/include/c++/4.8.3/ext/numeric_traits.h:
+
+/usr/include/c++/4.8.3/bits/stl_pair.h:
+
+/usr/include/c++/4.8.3/bits/move.h:
+
+/usr/include/c++/4.8.3/bits/concept_check.h:
+
+/usr/include/c++/4.8.3/type_traits:
+
+/usr/include/c++/4.8.3/bits/stl_iterator_base_types.h:
+
+/usr/include/c++/4.8.3/bits/stl_iterator_base_funcs.h:
+
+/usr/include/c++/4.8.3/debug/debug.h:
+
+/usr/include/c++/4.8.3/bits/stl_iterator.h:
+
+/usr/include/c++/4.8.3/cstdint:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.8.3/include/stdint.h:
+
+/usr/include/stdint.h:
+
+/usr/include/c++/4.8.3/bits/localefwd.h:
+
+/usr/include/c++/4.8.3/x86_64-redhat-linux/bits/c++locale.h:
+
+/usr/include/c++/4.8.3/clocale:
+
+/usr/include/locale.h:
+
+/usr/include/bits/locale.h:
+
+/usr/include/c++/4.8.3/cctype:
+
+/usr/include/ctype.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/include/bits/byteswap-16.h:
+
+/usr/include/c++/4.8.3/bits/ios_base.h:
+
+/usr/include/c++/4.8.3/ext/atomicity.h:
+
+/usr/include/c++/4.8.3/x86_64-redhat-linux/bits/gthr.h:
+
+/usr/include/c++/4.8.3/x86_64-redhat-linux/bits/gthr-default.h:
+
+/usr/include/pthread.h:
+
+/usr/include/sched.h:
+
+/usr/include/time.h:
+
+/usr/include/bits/sched.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/bits/timex.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/bits/setjmp.h:
+
+/usr/include/c++/4.8.3/x86_64-redhat-linux/bits/atomic_word.h:
+
+/usr/include/c++/4.8.3/bits/locale_classes.h:
+
+/usr/include/c++/4.8.3/string:
+
+/usr/include/c++/4.8.3/bits/allocator.h:
+
+/usr/include/c++/4.8.3/x86_64-redhat-linux/bits/c++allocator.h:
+
+/usr/include/c++/4.8.3/ext/new_allocator.h:
+
+/usr/include/c++/4.8.3/new:
+
+/usr/include/c++/4.8.3/bits/ostream_insert.h:
+
+/usr/include/c++/4.8.3/bits/cxxabi_forced.h:
+
+/usr/include/c++/4.8.3/bits/stl_function.h:
+
+/usr/include/c++/4.8.3/backward/binders.h:
+
+/usr/include/c++/4.8.3/bits/range_access.h:
+
+/usr/include/c++/4.8.3/bits/basic_string.h:
+
+/usr/include/c++/4.8.3/initializer_list:
+
+/usr/include/c++/4.8.3/ext/string_conversions.h:
+
+/usr/include/c++/4.8.3/cstdlib:
+
+/usr/include/stdlib.h:
+
+/usr/include/bits/waitflags.h:
+
+/usr/include/bits/waitstatus.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/bits/select.h:
+
+/usr/include/bits/sigset.h:
+
+/usr/include/sys/sysmacros.h:
+
+/usr/include/alloca.h:
+
+/usr/include/bits/stdlib-bsearch.h:
+
+/usr/include/bits/stdlib-float.h:
+
+/usr/include/c++/4.8.3/cstdio:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/bits/sys_errlist.h:
+
+/usr/include/bits/stdio.h:
+
+/usr/include/c++/4.8.3/cerrno:
+
+/usr/include/errno.h:
+
+/usr/include/bits/errno.h:
+
+/usr/include/linux/errno.h:
+
+/usr/include/asm/errno.h:
+
+/usr/include/asm-generic/errno.h:
+
+/usr/include/asm-generic/errno-base.h:
+
+/usr/include/c++/4.8.3/bits/functional_hash.h:
+
+/usr/include/c++/4.8.3/bits/hash_bytes.h:
+
+/usr/include/c++/4.8.3/bits/basic_string.tcc:
+
+/usr/include/c++/4.8.3/bits/locale_classes.tcc:
+
+/usr/include/c++/4.8.3/streambuf:
+
+/usr/include/c++/4.8.3/bits/streambuf.tcc:
+
+/usr/include/c++/4.8.3/bits/basic_ios.h:
+
+/usr/include/c++/4.8.3/bits/locale_facets.h:
+
+/usr/include/c++/4.8.3/cwctype:
+
+/usr/include/wctype.h:
+
+/usr/include/c++/4.8.3/x86_64-redhat-linux/bits/ctype_base.h:
+
+/usr/include/c++/4.8.3/bits/streambuf_iterator.h:
+
+/usr/include/c++/4.8.3/x86_64-redhat-linux/bits/ctype_inline.h:
+
+/usr/include/c++/4.8.3/bits/locale_facets.tcc:
+
+/usr/include/c++/4.8.3/bits/basic_ios.tcc:
+
+/usr/include/c++/4.8.3/bits/ostream.tcc:
+
+/usr/include/c++/4.8.3/istream:
+
+/usr/include/c++/4.8.3/bits/istream.tcc:
+
+/usr/include/c++/4.8.3/cstddef:
+
+/usr/include/osmium/io/any_input.hpp:
+
+/usr/include/osmium/io/any_compression.hpp:
+
+/usr/include/osmium/io/bzip2_compression.hpp:
+
+/usr/include/c++/4.8.3/stdexcept:
+
+/usr/include/bzlib.h:
+
+/usr/include/unistd.h:
+
+/usr/include/bits/posix_opt.h:
+
+/usr/include/bits/environments.h:
+
+/usr/include/bits/confname.h:
+
+/usr/include/getopt.h:
+
+/usr/include/osmium/io/compression.hpp:
+
+/usr/include/c++/4.8.3/functional:
+
+/usr/include/c++/4.8.3/typeinfo:
+
+/usr/include/c++/4.8.3/tuple:
+
+/usr/include/c++/4.8.3/utility:
+
+/usr/include/c++/4.8.3/bits/stl_relops.h:
+
+/usr/include/c++/4.8.3/array:
+
+/usr/include/c++/4.8.3/bits/uses_allocator.h:
+
+/usr/include/c++/4.8.3/map:
+
+/usr/include/c++/4.8.3/bits/stl_tree.h:
+
+/usr/include/c++/4.8.3/bits/alloc_traits.h:
+
+/usr/include/c++/4.8.3/bits/ptr_traits.h:
+
+/usr/include/c++/4.8.3/bits/stl_map.h:
+
+/usr/include/c++/4.8.3/bits/stl_multimap.h:
+
+/usr/include/c++/4.8.3/memory:
+
+/usr/include/c++/4.8.3/bits/stl_construct.h:
+
+/usr/include/c++/4.8.3/ext/alloc_traits.h:
+
+/usr/include/c++/4.8.3/bits/stl_uninitialized.h:
+
+/usr/include/c++/4.8.3/bits/stl_tempbuf.h:
+
+/usr/include/c++/4.8.3/bits/stl_raw_storage_iter.h:
+
+/usr/include/c++/4.8.3/ext/concurrence.h:
+
+/usr/include/c++/4.8.3/bits/unique_ptr.h:
+
+/usr/include/c++/4.8.3/bits/shared_ptr.h:
+
+/usr/include/c++/4.8.3/bits/shared_ptr_base.h:
+
+/usr/include/c++/4.8.3/backward/auto_ptr.h:
+
+/usr/include/c++/4.8.3/system_error:
+
+/usr/include/c++/4.8.3/x86_64-redhat-linux/bits/error_constants.h:
+
+/usr/include/osmium/io/detail/read_write.hpp:
+
+/usr/include/fcntl.h:
+
+/usr/include/bits/fcntl.h:
+
+/usr/include/bits/fcntl-linux.h:
+
+/usr/include/bits/uio.h:
+
+/usr/include/bits/stat.h:
+
+/usr/include/osmium/io/overwrite.hpp:
+
+/usr/include/osmium/io/file_compression.hpp:
+
+/usr/include/osmium/util/compatibility.hpp:
+
+/usr/include/osmium/util/cast.hpp:
+
+/usr/include/c++/4.8.3/cassert:
+
+/usr/include/assert.h:
+
+/usr/include/c++/4.8.3/limits:
+
+/usr/include/osmium/io/gzip_compression.hpp:
+
+/usr/include/zlib.h:
+
+/usr/include/zconf.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.8.3/include/limits.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.8.3/include/syslimits.h:
+
+/usr/include/limits.h:
+
+/usr/include/bits/posix1_lim.h:
+
+/usr/include/bits/local_lim.h:
+
+/usr/include/linux/limits.h:
+
+/usr/include/bits/posix2_lim.h:
+
+/usr/include/bits/xopen_lim.h:
+
+/usr/include/osmium/io/pbf_input.hpp:
+
+/usr/include/osmium/io/reader.hpp:
+
+/usr/include/c++/4.8.3/atomic:
+
+/usr/include/c++/4.8.3/bits/atomic_base.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.8.3/include/stdbool.h:
+
+/usr/include/c++/4.8.3/thread:
+
+/usr/include/c++/4.8.3/chrono:
+
+/usr/include/c++/4.8.3/ratio:
+
+/usr/include/c++/4.8.3/ctime:
+
+/usr/include/sys/wait.h:
+
+/usr/include/signal.h:
+
+/usr/include/bits/signum.h:
+
+/usr/include/bits/siginfo.h:
+
+/usr/include/bits/sigaction.h:
+
+/usr/include/bits/sigcontext.h:
+
+/usr/include/bits/sigstack.h:
+
+/usr/include/sys/ucontext.h:
+
+/usr/include/bits/sigthread.h:
+
+/usr/include/osmium/io/detail/input_format.hpp:
+
+/usr/include/osmium/io/file.hpp:
+
+/usr/include/c++/4.8.3/sstream:
+
+/usr/include/c++/4.8.3/bits/sstream.tcc:
+
+/usr/include/c++/4.8.3/vector:
+
+/usr/include/c++/4.8.3/bits/stl_vector.h:
+
+/usr/include/c++/4.8.3/bits/stl_bvector.h:
+
+/usr/include/c++/4.8.3/bits/vector.tcc:
+
+/usr/include/osmium/io/file_format.hpp:
+
+/usr/include/osmium/util/options.hpp:
+
+/usr/include/osmium/io/header.hpp:
+
+/usr/include/osmium/osm/box.hpp:
+
+/usr/include/osmium/osm/location.hpp:
+
+/usr/include/c++/4.8.3/cmath:
+
+/usr/include/math.h:
+
+/usr/include/bits/huge_val.h:
+
+/usr/include/bits/huge_valf.h:
+
+/usr/include/bits/huge_vall.h:
+
+/usr/include/bits/inf.h:
+
+/usr/include/bits/nan.h:
+
+/usr/include/bits/mathdef.h:
+
+/usr/include/bits/mathcalls.h:
+
+/usr/include/bits/mathinline.h:
+
+/usr/include/osmium/util/double.hpp:
+
+/usr/include/c++/4.8.3/algorithm:
+
+/usr/include/c++/4.8.3/bits/stl_algo.h:
+
+/usr/include/c++/4.8.3/bits/algorithmfwd.h:
+
+/usr/include/c++/4.8.3/bits/stl_heap.h:
+
+/usr/include/c++/4.8.3/random:
+
+/usr/include/c++/4.8.3/bits/random.h:
+
+/usr/include/c++/4.8.3/x86_64-redhat-linux/bits/opt_random.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.8.3/include/x86intrin.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.8.3/include/ia32intrin.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.8.3/include/mmintrin.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.8.3/include/xmmintrin.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.8.3/include/mm_malloc.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.8.3/include/emmintrin.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.8.3/include/immintrin.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.8.3/include/fxsrintrin.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.8.3/include/adxintrin.h:
+
+/usr/include/c++/4.8.3/bits/random.tcc:
+
+/usr/include/c++/4.8.3/numeric:
+
+/usr/include/c++/4.8.3/bits/stl_numeric.h:
+
+/usr/include/osmium/memory/buffer.hpp:
+
+/usr/include/c++/4.8.3/cstring:
+
+/usr/include/string.h:
+
+/usr/include/c++/4.8.3/iterator:
+
+/usr/include/c++/4.8.3/bits/stream_iterator.h:
+
+/usr/include/osmium/memory/item.hpp:
+
+/usr/include/osmium/memory/item_iterator.hpp:
+
+/usr/include/osmium/osm/item_type.hpp:
+
+/usr/include/osmium/osm/entity.hpp:
+
+/usr/include/osmium/osm/entity_bits.hpp:
+
+/usr/include/osmium/io/detail/read_thread.hpp:
+
+/usr/include/osmium/thread/name.hpp:
+
+/usr/include/sys/prctl.h:
+
+/usr/include/linux/prctl.h:
+
+/usr/include/osmium/thread/queue.hpp:
+
+/usr/include/c++/4.8.3/condition_variable:
+
+/usr/include/c++/4.8.3/mutex:
+
+/usr/include/c++/4.8.3/queue:
+
+/usr/include/c++/4.8.3/deque:
+
+/usr/include/c++/4.8.3/bits/stl_deque.h:
+
+/usr/include/c++/4.8.3/bits/deque.tcc:
+
+/usr/include/c++/4.8.3/bits/stl_queue.h:
+
+/usr/include/osmium/thread/checked_task.hpp:
+
+/usr/include/c++/4.8.3/future:
+
+/usr/include/osmium/io/detail/pbf_input_format.hpp:
+
+/usr/include/osmium/builder/osm_object_builder.hpp:
+
+/usr/include/osmium/builder/builder.hpp:
+
+/usr/include/osmium/osm/types.hpp:
+
+/usr/include/osmium/osm.hpp:
+
+/usr/include/osmium/osm/node.hpp:
+
+/usr/include/osmium/osm/object.hpp:
+
+/usr/include/osmium/memory/collection.hpp:
+
+/usr/include/osmium/osm/tag.hpp:
+
+/usr/include/osmium/osm/timestamp.hpp:
+
+/usr/include/osmium/osm/way.hpp:
+
+/usr/include/osmium/osm/node_ref.hpp:
+
+/usr/include/osmium/osm/node_ref_list.hpp:
+
+/usr/include/osmium/osm/relation.hpp:
+
+/usr/include/osmium/osm/area.hpp:
+
+/usr/include/osmium/osm/changeset.hpp:
+
+/usr/include/osmium/io/detail/pbf.hpp:
+
+/usr/local/include/osmpbf/osmpbf.h:
+
+/usr/local/include/osmpbf/fileformat.pb.h:
+
+/usr/include/google/protobuf/stubs/common.h:
+
+/usr/include/google/protobuf/generated_message_util.h:
+
+/usr/include/google/protobuf/message_lite.h:
+
+/usr/include/google/protobuf/repeated_field.h:
+
+/usr/include/google/protobuf/stubs/type_traits.h:
+
+/usr/include/google/protobuf/stubs/template_util.h:
+
+/usr/include/google/protobuf/extension_set.h:
+
+/usr/local/include/osmpbf/osmformat.pb.h:
+
+/usr/include/netinet/in.h:
+
+/usr/include/sys/socket.h:
+
+/usr/include/sys/uio.h:
+
+/usr/include/bits/socket.h:
+
+/usr/include/bits/socket_type.h:
+
+/usr/include/bits/sockaddr.h:
+
+/usr/include/asm/socket.h:
+
+/usr/include/asm-generic/socket.h:
+
+/usr/include/asm/sockios.h:
+
+/usr/include/asm-generic/sockios.h:
+
+/usr/include/bits/in.h:
+
+/usr/include/osmium/io/detail/zlib.hpp:
+
+/usr/include/osmium/thread/pool.hpp:
+
+/usr/include/osmium/thread/function_wrapper.hpp:
+
+/usr/include/osmium/io/xml_input.hpp:
+
+/usr/include/osmium/io/detail/xml_input_format.hpp:
+
+/usr/include/expat.h:
+
+/usr/include/expat_external.h:
+
+/usr/include/osmium/handler.hpp:
+
+/usr/include/osmium/visitor.hpp:
+
+/usr/include/osmium/io/reader_iterator.hpp:
+
+/usr/include/osmium/io/input_iterator.hpp:
+
+/usr/include/osmium/index/map/sparse_table.hpp:
+
+/usr/include/google/sparsetable:
+
+/usr/include/sparsehash/sparsetable:
+
+/usr/include/sparsehash/internal/sparseconfig.h:
+
+/usr/include/inttypes.h:
+
+/usr/include/sparsehash/type_traits.h:
+
+/usr/include/sparsehash/template_util.h:
+
+/usr/include/sparsehash/internal/hashtable-common.h:
+
+/usr/include/sparsehash/internal/libc_allocator_with_realloc.h:
+
+/usr/include/osmium/index/map.hpp:
+
+/usr/include/osmium/index/index.hpp:
+
+/usr/include/osmium/handler/node_locations_for_ways.hpp:
+
+/usr/include/osmium/index/map/dummy.hpp:
+
+/usr/include/c++/4.8.3/set:
+
+/usr/include/c++/4.8.3/bits/stl_set.h:
+
+/usr/include/c++/4.8.3/bits/stl_multiset.h:
+
+/usr/include/c++/4.8.3/fstream:
+
+/usr/include/c++/4.8.3/bits/codecvt.h:
+
+/usr/include/c++/4.8.3/x86_64-redhat-linux/bits/basic_file.h:
+
+/usr/include/c++/4.8.3/x86_64-redhat-linux/bits/c++io.h:
+
+/usr/include/c++/4.8.3/bits/fstream.tcc:
