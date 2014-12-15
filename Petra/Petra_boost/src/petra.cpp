@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cstddef>
 
 #include <osmium/io/any_input.hpp>
 #include <osmium/handler.hpp>
@@ -13,27 +12,15 @@
 #include <osmium/handler/node_locations_for_ways.hpp>
 #include <osmium/osm.hpp>
 
-#include <boost/config.hpp>
-
 #include <boost/graph/adjacency_list.hpp>
 #include <boost/graph/dijkstra_shortest_paths.hpp>
-#include <boost/graph/graph_traits.hpp>
 #include <boost/graph/iteration_macros.hpp>
-#include <boost/graph/properties.hpp>
 
-#include <boost/property_map/property_map.hpp>
-
-#include <vector>
 #include <fstream>
-#include <cstdio>
 #include <string>
-#include <set>
-#include <map>
 #include <iomanip>
-#include <cstdlib>
 #include <algorithm>
 #include <ctime>
-#include <utility>
 #include <sstream>
 
 class Adj {
@@ -83,31 +70,16 @@ public:
 
         typedef boost::iterator_property_map < Vertex*, IndexMap, Vertex, Vertex& > PredecessorMap;
         typedef boost::iterator_property_map < Weight*, IndexMap, Weight, Weight& > DistanceMap;
-        std::vector<std::pair<int, int> > csucsok;
-        std::vector<double> suly;
         std::vector<std::pair<osmium::object_id_type, osmium::object_id_type> > edges;
 
         Graph g;
-        std::vector<Vertex> ve;
         std::map<osmium::object_id_type, Vertex> vMap;
-        int acti, acto;
-        int iFrom, iTo;
 
         // Fill up graph
         for (auto& i : nj) {
-
-            //vMap[i.first] = boost::add_vertex(std::to_string(i.first), g);
-
-
             for (auto& j : i.second.adjacents) {
-                if (added.find(j.first) != added.end())
-                    continue;
-
                 edges.push_back(std::make_pair(i.first, j.first));
-                //vMap[j.first] = boost::add_vertex(std::to_string(j.first), g);
-                //boost::add_edge(vMap[i.first], vMap[j.first], 12, g);
             }
-            added.insert(i.first);
         }
 
         std::set<osmium::object_id_type> vAdded;
@@ -139,7 +111,6 @@ public:
         std::cout << "distances and parents:" << std::endl;
         NameMap nameMap = boost::get(boost::vertex_name, g);
 
-        int i = 0;
         Vertex vf = vMap[from];
 
         BGL_FORALL_VERTICES(v, g, Graph) {
@@ -159,21 +130,34 @@ public:
             path.push_back(edge);
         }
 
+        bool first = true;
+        size_t cnt = 0;
         std::stringstream ss;
-        osmium::object_id_type intVar;
-        std::cout << "Shortest path from v0 to v5:" << std::endl;
+        osmium::object_id_type tmpVertex;
+        std::cout << "Shortest path from (" << locations.get(from).lat()
+                << ", " << locations.get(from).lon() << ") to (" <<
+                locations.get(to).lat() << ", " << locations.get(to).lon() << ")\n";
         for (PathType::reverse_iterator pathIterator = path.rbegin(); pathIterator != path.rend(); ++pathIterator) {
+            cnt++;
             std::cout << nameMap[boost::source(*pathIterator, g)] << " -> "
                     << nameMap[boost::target(*pathIterator, g)]
                     << " = " << boost::get(boost::edge_weight, g, *pathIterator)
                     << std::endl;
 
+            if(first) {
+                ss.clear();
+                ss << nameMap[boost::source(*pathIterator, g)];
+                ss >> tmpVertex;
+                myRoute.push_back(tmpVertex);
+                first = false;
+            }
             ss.clear();
-            ss << nameMap[boost::source(*pathIterator, g)];
-            ss >> intVar;
-            myRoute.push_back(intVar);
+            ss << nameMap[boost::target(*pathIterator, g)];
+            ss >> tmpVertex;
+            myRoute.push_back(tmpVertex);
         }
-        std::cout << "\nDistance: " << distanceMap[vMap[to]] << std::endl;
+        std::cout << "\n### Distance: " << distanceMap[vMap[to]] << std::endl;
+        std::cout << "### Traveled " << cnt << " edges\n";
     }
 
     void node(osmium::Node& nd) {
@@ -308,7 +292,7 @@ public:
     }
 
     void output() {
-        std::ofstream fileLoc("/home/hpba/junctions.dat");
+        std::ofstream fileLoc("/home/hpba/boost.dat");
         osmium::object_id_type prev;
         bool first = true;
 
@@ -333,41 +317,6 @@ public:
         std::cout << id << " has " << nj[id].adjacents.size() << " adjacents!\n";
     }
 
-    double airDist = 0, min = INFINITY, nextDist;
-    std::vector<osmium::object_id_type> minVector;
-    std::set<osmium::object_id_type> tmpDenied;
-    int limit;
-
-    void fromAtoB(osmium::object_id_type A, osmium::object_id_type B,
-            double dist,
-            std::vector<osmium::object_id_type> currentRoute) {
-
-        currentRoute.push_back(A);
-        bool isA = false, isB = true;
-        if (A == B && dist < min) {
-            min = dist;
-            currentRoute.push_back(A);
-            myRoute = currentRoute;
-            std::cout << dist << " yeah\n";
-            isA = true;
-        }
-
-        if (dist > limit) {
-            isB = false;
-        }
-
-        if (!isA && isB) {
-            for (auto& nd : nj[A].adjacents) {
-                // If we already visited it, then skip it
-                if (std::find(currentRoute.begin(), currentRoute.end(), nd.first)
-                        != currentRoute.end()) continue;
-
-                fromAtoB(nd.first, B, nj[A].adjacents[nd.first].dist + dist,
-                        currentRoute);
-            }
-        }
-    }
-
     osmium::object_id_type getNode(double lat, double lon) {
         double min = INFINITY, tmp1, tmp2;
         osmium::object_id_type tmp;
@@ -382,16 +331,6 @@ public:
         }
         return tmp;
     }
-
-    void check() {
-        for (auto& it : nj) {
-            for (auto& jt : it.second.adjacents) {
-                if (jt.first == it.first) {
-                    std::cout << it.first << " = " << jt.first << "\n";
-                }
-            }
-        }
-    }
 };
 
 int main(int argc, char* argv[]) {
@@ -404,7 +343,8 @@ int main(int argc, char* argv[]) {
             toLat = std::stod(argv[4]);
             toLon = std::stod(argv[5]);
         } else if (argc != 2) {
-            std::cout << "Ivalid arguments!\n";
+            std::cout << "Invalid arguments!\n";
+            std::exit(1);
         }
         osmium::io::File infile(argv[1]);
         osmium::io::Reader reader(infile, osmium::osm_entity_bits::all);
@@ -425,23 +365,13 @@ int main(int argc, char* argv[]) {
         osmium::object_id_type from, to;
         from = rt.getNode(fromLat, fromLon);
         to = rt.getNode(toLat, toLon);
-
-        rt.airDist = rt.getDist(from, to);
-        rt.limit = rt.airDist * 6;
-        //220807690;220807695;
         rt.printNode(from);
         rt.printNode(to);
-        //std::set<osmium::object_id_type> denied;
-        std::vector<osmium::object_id_type> empty;
-        rt.check();
 
         time_t startTime = time(NULL);
-
-        //rt.fromAtoB(from, to, 0, empty);
         rt.boostPath(from, to);
-
-        std::cout << "Routing time: "
-                << difftime(startTime, time(NULL)) / 60
+        std::cout << std::setprecision(2) << "### Routing time: "
+                << difftime(time(NULL), startTime) / 60.0
                 << " minute(s)\n";
 
         rt.output();
